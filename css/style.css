@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'poppinsmedium';
-  src: url('..fonts/poppins-medium-webfont.woff2') format('woff2'),
-    url('..fonts/poppins-medium-webfont.woff') format('woff');
+  src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'poppinsregular';
-  src: url('..fonts/poppins-regular-webfont.woff2') format('woff2'),
-    url('..fonts/poppins-regular-webfont.woff') format('woff');
+  src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'poppinssemibold';
-  src: url('..fonts/poppins-semibold-webfont.woff2') format('woff2'),
-    url('..fonts/poppins-semibold-webfont.woff') format('woff');
+  src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 :root {
   --main-color: rgba(255, 255, 255, 0.55);
   --title-color: rgba(255, 255, 255, 0.9);    
-  --bg-color: #C4C4C4;      
+  --bg-color: #1E252B;      
   --button-color: #FF6E30;  
 }
 
@@ -34,3 +34,91 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--bg-color);   
+}
+
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/**********HEADER**********/
+.header {
+  padding: 26px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 10px;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__img {
+  margin-right: 12px;
+}
+
+.logo__text {
+  font-family: 'poppinssemibold';
+  font-size: 22px;
+  color: var(--title-color);
+}
+
+.header__nav {
+  margin-right: 10px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav__link {
+  font-family: 'poppinsmedium';
+  font-size: 16px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--button-color);
+}
+
+.header__identification {
+  display: flex;
+  align-items: center;
+}
+
+.identification__button {
+  font-family: 'poppinsmedium';
+  font-size: 16px;    
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+
+.identification__button:not(:last-child) {
+  margin-right: 41px;
+}
+
+.identification__button_active {
+  padding: 16px 28px;
+  color: #FDF5FF;
+  background-color: var(--button-color);
+  border-radius: 8px;
+} 
