@@ -122,3 +122,120 @@ body {
   background-color: var(--button-color);
   border-radius: 8px;
 } 
+
+/**********HERO**********/
+.hero {    
+  padding: 81px 0 10px;
+}
+
+.hero__wrapper {  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__illustration {
+  position: absolute;
+  bottom: 0;
+  right: -85px;  
+  width: 589px;
+  height: 568px;
+  background-image: url("../img/illustration.png");
+  background-repeat: no-repeat;  
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  max-width: 600px;
+  font-family: 'poppinsmedium';
+  font-size: 50px;
+  line-height: 140%;
+  color: var(--title-color);
+}
+
+.hero__title_orange {
+  color: var(--button-color);
+}
+
+.hero__text {
+  margin-bottom: 56px;
+  max-width: 485px;
+  font-family: 'poppinsregular';
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--main-color);  
+}
+
+.hero__form {
+  position: relative;
+  margin-bottom: 121px;
+  width: fit-content;  
+}
+
+.hero__input {    
+  margin: 0;
+  padding: 26px 154px 26px 55px;
+  width: 498px;
+  border: none;
+  border-radius: 15px;
+  background-color: #283036;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 19px 21px;
+  outline: none;
+}
+
+input[placeholder] {
+  font-family: 'poppinsregular';
+  font-size: 14px;          
+  color: rgba(255, 255, 255, 0.38);
+}
+
+input::-moz-placeholder {
+  font-family: 'poppinsregular';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+input:-moz-placeholder {
+  font-family: 'poppinsregular';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+input:-ms-input-placeholder {
+  font-family: 'poppinsregular';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.hero__button {
+  position: absolute;
+  top: 11px;
+  right: 11px;  
+  padding: 16px 36px 16px 38px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'poppinssemibold';
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+.hero__social-list {
+  margin-bottom: 7px;
+  margin-left: 13px;
+  display: flex;
+  align-items: center;  
+  list-style: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social__link {
+  text-decoration: none;
+}
