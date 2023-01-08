@@ -348,12 +348,15 @@ input:-ms-input-placeholder {
 }
 
 .card {
-  position: relative;
+  position: relative; 
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.popular__card {
   margin-bottom: 97px;
   max-width: 392px;
   padding: 33px;
-  cursor: pointer;
-  overflow: hidden;
 }
 
 .card__ellipse {
@@ -476,7 +479,7 @@ input:-ms-input-placeholder {
 
 /**********BRAND**********/
 .brand {
-  margin-bottom: 200px;
+  margin-bottom: 227px;
 }
 
 .brand__wrapper {  
@@ -516,6 +519,63 @@ input:-ms-input-placeholder {
   list-style: none;
 }
 
-.brand__item {
+/**********NEWCOMER**********/
+.newcomer {
+  margin-bottom: 205px;
+}
 
+.newcomer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newcomer__info {
+  max-width: 430px;
+}
+
+.newcomer__title {
+  margin-bottom: 35px;
+  font-family: 'poppinsmedium';
+  font-size: 48px;     
+  color: var(--title-color);    
+}
+
+.newcomer__text {
+  margin-bottom: 79px;
+  font-family: 'poppinsmedium';
+  font-size: 18px;
+  color: var(--main-color);
+  line-height: 30px;
+}
+
+.newcomer__button {
+  padding: 19px 40px;
+  font-size: 18px;   
+  font-family: 'poppinsmedium';
+  color: #FFFFFF;
+  background-color: var(--button-color);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.newcomer__button:hover {
+  opacity: .8;
+}
+
+.newcomer__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -9px;
+  max-width: 600px;
+}
+
+.newcomer__card {
+  margin-bottom: 46px;
+  max-width: 288px;
+  padding: 28px 21px 28px 22px;
+}
+
+.small {
+  font-size: 14px;
 }
